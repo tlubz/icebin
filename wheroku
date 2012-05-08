@@ -1,0 +1,2 @@
+#!/bin/bash
+git remote -v | grep heroku | head -1 | cut -d' ' -f1

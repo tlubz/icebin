@@ -1,0 +1,8 @@
+#!/bin/bash
+
+app=`git config "heroku.appname.$1"`
+if [ "$app" != '' ]; then
+  pheroku $app
+else
+  echo heroku.appname.$1 not found
+fi

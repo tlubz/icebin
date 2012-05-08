@@ -1,0 +1,9 @@
+#!/bin/bash
+
+echo setting remote heroku to $1
+
+git remote rm heroku 2>&1 > /dev/null
+
+git remote add heroku git@heroku.com:$1.git
+
+wheroku
